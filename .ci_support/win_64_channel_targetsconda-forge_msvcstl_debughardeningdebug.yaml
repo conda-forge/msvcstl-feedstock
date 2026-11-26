@@ -1,7 +1,7 @@
 c_compiler:
 - vs
 c_compiler_version:
-- '2022'
+- '2026'
 c_stdlib:
 - vs
 channel_sources:
@@ -11,7 +11,7 @@ channel_targets:
 cxx_compiler:
 - vs
 cxx_compiler_version:
-- '2022'
+- '2026'
 hardening:
 - debug
 target_platform:

@@ -1,7 +1,11 @@
+conda_build:
+  error_overlinking: true
 conda_build_tool: rattler-build
+conda_forge_output_validation: true
 github:
   branch_name: main
   tooling_branch_name: main
-conda_build:
-  error_overlinking: true
-conda_forge_output_validation: true
+workflow_settings:
+  vm_image:
+    - value: windows-2025-vs2026
+      os: win
