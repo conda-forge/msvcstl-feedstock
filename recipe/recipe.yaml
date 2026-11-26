@@ -11,9 +11,10 @@ source:
     patches:
       # backport https://github.com/microsoft/STL/commit/488e7953685722d2d6666f764c1f2f61958bba76
       - patches/0001-Declare-__isa_available-and-__isa_enabled-properly-6.patch
-  - url: https://github.com/boostorg/math/archive/e0fcd19f7227d81391770ea46015acc3c80af810.tar.gz
+
+  - target_directory: boost-math
+    url: https://github.com/boostorg/math/archive/e0fcd19f7227d81391770ea46015acc3c80af810.tar.gz
     sha256: 1abfe848c60e409b88b3a7f4f592e2c0dad7a1e2798197dedf623588a77585a6
-    target_directory: boost-math
 
 build:
   number: 0
