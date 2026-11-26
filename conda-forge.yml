@@ -5,3 +5,7 @@ conda_forge_output_validation: true
 github:
   branch_name: main
   tooling_branch_name: main
+workflow_settings:
+  vm_image:
+    - value: windows-2025-vs2026
+      os: win
