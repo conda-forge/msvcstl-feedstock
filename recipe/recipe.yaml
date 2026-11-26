@@ -47,7 +47,7 @@ outputs:
         - msvcstl-devel ==${{ version }}
         # Keep in sync with the __clang_major__ check in stl/inc/yvals_core.h
         - clangxx >=20
-        - vs >=2022
+        - vs >=2026
     tests:
       - package_contents:
           files:
