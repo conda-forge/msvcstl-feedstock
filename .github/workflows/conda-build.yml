@@ -22,7 +22,7 @@ jobs:
       max-parallel: 50
       matrix:
         include:
-          - CONFIG: win_64_hardeningdebug
+          - CONFIG: win_64_channel_targetsconda-forge_mainhardeningnone
             STORE_BUILD_ARTIFACTS: False
             UPLOAD_PACKAGES: True
             build_platform: win-64
@@ -34,7 +34,7 @@ jobs:
             resize_partitions: False
             runs_on: ['windows-2022']
             tools_install_dir: D:\Miniforge
-          - CONFIG: win_64_hardeningnone
+          - CONFIG: win_64_channel_targetsconda-forge_msvcstl_debughardeningdebug
             STORE_BUILD_ARTIFACTS: False
             UPLOAD_PACKAGES: True
             build_platform: win-64
