@@ -26,26 +26,26 @@ jobs:
             STORE_BUILD_ARTIFACTS: False
             UPLOAD_PACKAGES: True
             build_platform: win-64
-            build_workspace_dir: D:\\bld\\
+            build_workspace_dir: C:\\bld\\
             docker_run_args: 
             free_disk_space: skip
             os: windows
             pagefile_size: 0
             resize_partitions: False
-            runs_on: ['windows-2022']
-            tools_install_dir: D:\Miniforge
+            runs_on: ['windows-2025-vs2026']
+            tools_install_dir: C:\Miniforge
           - CONFIG: win_64_channel_targetsconda-forge_msvcstl_debughardeningdebug
             STORE_BUILD_ARTIFACTS: False
             UPLOAD_PACKAGES: True
             build_platform: win-64
-            build_workspace_dir: D:\\bld\\
+            build_workspace_dir: C:\\bld\\
             docker_run_args: 
             free_disk_space: skip
             os: windows
             pagefile_size: 0
             resize_partitions: False
-            runs_on: ['windows-2022']
-            tools_install_dir: D:\Miniforge
+            runs_on: ['windows-2025-vs2026']
+            tools_install_dir: C:\Miniforge
     steps:
 
     - name: Checkout code
