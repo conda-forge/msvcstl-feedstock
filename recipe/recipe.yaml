@@ -57,6 +57,9 @@ outputs:
     inherit: msvcstl-build
     build:
       string: ${{ "debug_" if hardening == "debug" }}h${{ hash }}_${{ build_number }}
+      variant:
+        use_keys:
+          - hardening
       files:
         - Library/bin/msvcp140_1${{ "d" if hardening == "debug" }}_conda.dll
         - Library/bin/msvcp140_2${{ "d" if hardening == "debug" }}_conda.dll
@@ -80,6 +83,10 @@ outputs:
   - package:
       name: msvcstl-devel
     build:
+      string: ${{ "debug_" if hardening == "debug" }}h${{ hash }}_${{ build_number }}
+      variant:
+        use_keys:
+          - hardening
       files:
         - Library/modules/modules.json
         - Library/modules/std.compat.ixx
@@ -90,7 +97,6 @@ outputs:
         - Library/lib/libcpmt${{ "d" if hardening == "debug" }}1.lib
         - if: hardening == "debug"
           then: Library/lib/libcpmtd0.lib
-      string: ${{ "debug_" if hardening == "debug" }}h${{ hash }}_${{ build_number }}
     inherit: msvcstl-build
     requirements:
       host:
