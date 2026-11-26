@@ -18,6 +18,7 @@ build:
   skip: not win
 
 outputs:
+  # this builds both the release & debug variants at the same time
   - staging:
       name: msvcstl-build
     build:
