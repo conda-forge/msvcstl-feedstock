@@ -7,7 +7,7 @@ c_stdlib:
 channel_sources:
 - conda-forge
 channel_targets:
-- conda-forge main
+- conda-forge msvcstl_debug
 cxx_compiler:
 - vs
 cxx_compiler_version:
@@ -16,3 +16,6 @@ hardening:
 - debug
 target_platform:
 - win-64
+zip_keys:
+- - hardening
+  - channel_targets
