@@ -1,3 +1,11 @@
 hardening:
   - none
   - debug
+
+# publish hardened builds to a separate label
+channel_targets:
+  - conda-forge main
+  - conda-forge msvcstl_debug
+
+zip_keys:
+  - [hardening, channel_targets]
